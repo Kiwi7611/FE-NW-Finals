@@ -55,8 +55,81 @@ var app = {
             });
           });
     },
-
+	
+	world_map:function() {
+    	google.charts.load('current', {
+        'packages':['geochart'],
+        // Note: you will need to get a mapsApiKey for your project.
+        // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
+        'mapsApiKey': 'AIzaSyBM6Qlmlm0duvNlzgZJHdArQhos7kFsTV4'
+      });
+      google.charts.setOnLoadCallback(drawRegionsMap);
     
+      function drawRegionsMap() {
+        var data = google.visualization.arrayToDataTable([
+          ['Country', 'Popularity'],
+          ['Germany', 2173],
+          ['United States', 11346],
+          ['Brazil', 9480],
+          ['Canada', 3550],
+          ['France', 4014],
+          ['Russia', 3217],
+          ['Italy', 3815],
+          ['China', 9546],
+          ['United Arab Emirates',1447],
+          ['Pakistan', 2529],
+          ['Israel', 2553],
+          ['Saudi Arabia', 2338],
+          ['Philippines',6583],
+          ['Vietnam', 6444],
+          ['Cambodia', 1552],
+          ['Singapore', 3101],
+          ['Sri Lanka', 3799],
+          ['Denmark', 1450],
+          ['Finland', 1236],
+          ['Greenland', 546],
+          ['Norway', 1529],
+          ['Cuba', 2913],
+          ['Dominica',1764],
+          ['Zambia', 2952],
+          ['Zimbabwe', 2448],
+          ['Senegal',2813],
+          ['Madagascar',7546],
+          ['Chad', 1338],
+          ['Jamaica', 2438],
+          ['Libya', 1172],
+          ['Guatemala',4609],
+          ['New Zealand',2106],
+          ['Chile', 2194], 
+          ['Ecuador',9173], 
+          ['Nicaragua',4585],
+          ['Ukraine',1767],
+          ['Argentina',3617],
+          ['Australia',10519],
+          ['Portugal', 3542], 
+          ['Russia', 3270],
+          ['Colombia',9697],
+          ['Egypt',2668],
+          ['Kazakhstan',1285],
+          ['India',8458],
+          ['Indonesia', 12052],
+          ['South Sudan',1676],
+          ['Ghana',3473],
+          ['Sudan', 1615],
+          ['Niger',1137],
+          ['Mexico', 10002],
+          ['Iran', 2620],
+          ['Algeria',1871]
+        ]);
+    
+        var options = {};
+    
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+    
+        chart.draw(data, options);
+      }
+},
+   
     container_scroll:function() {
         var speciesContainer = $('.contained')
         $(speciesContainer).on('click', 'a', function () {
@@ -91,7 +164,7 @@ var app = {
         });
         
         $(window).on('scroll', function(e) {
-            var elems    = $('#second, #third'),
+            var elems    = $('#second, #third, #first'),
                 scrolled = $(this).scrollTop();
             
             var dataPage = elems.filter(function() {

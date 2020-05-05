@@ -12,10 +12,11 @@
 <div class="body">   
     <div id="scroll">
             <div  data-page="second" class="scroll_item">&nbsp;</div>
+            <div  data-page="first" class="scroll_item">&nbsp;</div>
             <div  data-page="third" class="scroll_item">&nbsp;</div>
+
     </div>
 
-        
 
     <div id="second">
             <div id="container">
@@ -25,7 +26,9 @@
             <div id="extinction">
                 <p>WE ARE <br/> ON THE VERGE <br/> OF EXTINCTION</p>
             </div>
-    </div>   
+    </div>  
+
+   
 
     <div id="third">
 
@@ -56,9 +59,16 @@
         </div>
 
     </div>
+
+    <div id="first">
+        <div id="wording">Animal Habitats</div>
+        <div id="regions_div"></div>
+    </div>
+    
 </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="scripttt.js"></script>
     
     
@@ -71,6 +81,7 @@
                    app.GetAnimal();
                    app.container_scroll();
                    app.dropping();
+                   app.world_map();
                });	
        </script>
 

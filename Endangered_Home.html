@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endagered Species</title>
+    <link rel="stylesheet" type="text/css" href="style_Home.css"/>
+    <link href="//db.onlinewebfonts.com/c/ea7abe232611a43187af00b0f8c02258?family=Bodoni72C" rel="stylesheet" type="text/css"/>
+    <script src="https://kit.fontawesome.com/68a4c21495.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="body">   
+    <div id="scroll">
+            <div  data-page="second" class="scroll_item">&nbsp;</div>
+            <div  data-page="third" class="scroll_item">&nbsp;</div>
+    </div>
+
+        
+
+    <div id="second">
+            <div id="container">
+                <div id="text"></div>
+            </div>
+
+            <div id="extinction">
+                <p>WE ARE <br/> ON THE VERGE <br/> OF EXTINCTION</p>
+            </div>
+    </div>   
+
+    <div id="third">
+
+        <img src="http://www.remotelands.com/travelogues/app/uploads/2017/06/Snow-Leopard.jpg">
+        <form id="demo-2" action="/search">
+        <input name="ani" type="text" placeholder="animal ID">
+        </form> 
+
+        
+
+        <div id="find_animal">
+            <div>Find Animals <br/> By ID</div>
+        </div>
+
+        <div class="animal_list">
+            <section class="ani_container1">
+                <button id="content-btn1" class="dropdown-btn"><i class="fad fa-badger-honey"></i><br/><div id="word">Mammal</div></button>
+                <div id="contained" class="a"><div id="mammal"></div></div>
+            </section>
+            <section class="ani_container2">
+                <button id="content-btn1" class="dropdown-btn"><i class="fas fa-snake"></i><br/><div id="word">Reptile</div></button>
+                <div id="contained" class="a"><div id="reptile"></div></div>
+            </section>
+            <section class="ani_container3">
+                <button id="content-btn1" class="dropdown-btn"><i class="fas fa-fish"></i><br/><div id="word">Actinopterygii</div></button>   
+                <div id="contained" class="a"><div id="actinop"></div></div>
+            </section>
+        </div>
+
+    </div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="scripttt.js"></script>
+    
+    
+    <script>
+        $(document).ready(function(){
+                   console.log("LOADED!!!!");
+                   app.Homepage_typewriter();
+                   app.buttonscroll();
+                   app.scrolling();
+                   app.GetAnimal();
+                   app.container_scroll();
+                   app.dropping();
+               });	
+       </script>
+
+</body>
+</html>

@@ -195,7 +195,7 @@ var app = {
                         } else if (SearchTerm =="139"){
                             document.body.style.backgroundImage = "url('https://proactivepestga.com/wp-content/uploads/2014/06/Q22010subwili21.jpg')";
                         } else if (SearchTerm == "138"){
-                            document.body.style.backgroundImag = "url('https://animals.sandiegozoo.org/sites/default/files/2020-01/hero-rodrigues-fruit-bat.jpg')";
+                            document.body.style.backgroundImage = "url('https://animals.sandiegozoo.org/sites/default/files/2020-01/hero-rodrigues-fruit-bat.jpg')";
                         } else if (SearchTerm == "140") {
                             document.body.style.backgroundImage ="url('https://images2.minutemediacdn.com/image/upload/c_fill,g_auto,h_1248,w_2220/f_auto,q_auto,w_1100/v1555432914/shape/mentalfloss/6jhkj634h.png')";
                         } else if (SearchTerm == "142") {

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style_Home.css"/>
+    <script src="https://kit.fontawesome.com/68a4c21495.js" crossorigin="anonymous"></script>
+    <title>Habitat</title>
+</head>
+<body>
+<div class="body">
+<div class="slide-bar">
+    <input type = "text" name="animal-name" id="animal-name">
+    <input type="button" id="animalbtn" value="Search">
+<br/>
+    <p id="animal_namess">Hello:</p>
+    <button id="content-btn" class="dropdown-btn"><i class="fas fa-horse"></i>&nbsp;Species</button>
+        <div id="contained2" class="a"><p id="tax">N/A</p></div>
+<br/>
+    <button id="content-btn" class="dropdown-btn"><i class="fas fa-globe-americas"></i>&nbsp;Geographic Range</button>
+       <div id="contained2" class="a"><p id="geoo">N/A</p></div>
+<br/>
+    <button id="content-btn" class="dropdown-btn"><i class="fas fa-kiwi-bird"></i>&nbsp;Population</button>
+        <div id="contained2" class="a"><p id="pop">N/A</p></div>
+<br/>
+    <button id="content-btn" class="dropdown-btn"><i class="fas fa-chart-area"></i>&nbsp;Population Trend</button>
+        <div id="contained2" class="a"><div id="popt">N/A</div></div>
+<br/>
+    <button id="content-btn" class="dropdown-btn"><i class="fas fa-mountain"></i>&nbsp;Habitat</button>
+        <div id="contained2" class="a"><div id="hbt">N/A</div></div>  
+<br/>
+    <button id="content-btn" class="dropdown-btn"><i class="fas fa-exclamation-circle"></i>&nbsp;Threats</button>
+        <div id="contained2" class="a"><div id="thr">N/A</div></div>
+    </div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="scripttt.js"></script>
+        <script>
+            $(document).ready(function(){
+                       console.log("LOADED!!!!");
+
+                       // See if there search term
+                        const urlParams = new URLSearchParams(window.location.search);
+                        const searchTerm = urlParams.get('ani');
+                        if (searchTerm != null) {
+                            app.GetThreats(searchTerm);
+                            app.container_scroll_threats();
+                        }
+        
+                       //app.GetThreats();
+
+                       /*$("#animalbtn").click(
+                            function(){
+                                let input = $("#animal-name").val();
+                                 console.log(input);
+
+                                app.GetThreats(input);
+                            });
+                        */
+            }); 	
+           </script>
+</body>
+</html>

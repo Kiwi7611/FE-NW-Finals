@@ -249,6 +249,7 @@ input::-webkit-input-placeholder {
 
 
 #content-btn1{
+  padding: 6px 8px 6px 7px;
   font-size:60px;
   text-decoration: none;
   color: rgb(160,124,53);
@@ -256,10 +257,11 @@ input::-webkit-input-placeholder {
   display:inline;
   cursor: pointer;
   outline: none;
-  border: none;
+  border: 2px solid rgb(160,124,53);
 }
 
 #contained {
+    padding: 9px 0px 0px 0px;
     overflow:scroll;
     height:400px;
     width:140px;

@@ -1,0 +1,539 @@
+@import url(//db.onlinewebfonts.com/c/ea7abe232611a43187af00b0f8c02258?family=Bodoni72C);
+@font-face {font-family: "Bodoni72C"; src: url("//db.onlinewebfonts.com/t/ea7abe232611a43187af00b0f8c02258.eot"); src: url("//db.onlinewebfonts.com/t/ea7abe232611a43187af00b0f8c02258.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/ea7abe232611a43187af00b0f8c02258.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/ea7abe232611a43187af00b0f8c02258.woff") format("woff"), url("//db.onlinewebfonts.com/t/ea7abe232611a43187af00b0f8c02258.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/ea7abe232611a43187af00b0f8c02258.svg#Bodoni72C") format("svg"); }
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
+
+body{
+    margin:0px 0px 0px 0px;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#container {
+    margin: 328px 0 0 180px;
+}
+
+#extinction{
+    font-family:Bodoni72C;
+    font-size:50px;
+    color:whitesmoke;
+    top: 335px;
+    left: 180px;
+    position:absolute;
+    line-height:53px;
+}
+
+#text {
+    color: whitesmoke;
+    font-size:35px;
+    font-family:Bodoni72C;
+    position:absolute;
+}
+
+#scroll {
+    position: fixed;
+    top: 40%;
+    left:35px;
+    z-index: 999;
+}
+
+.scroll_item {
+    border: 1.5px solid #FFF;
+    width:10px;
+    height: 10px;
+    margin: 30px;
+    border-radius:50%;
+
+}
+.scroll_item:hover{
+    width:10px;
+    height:10px;
+    opacity:0.8;
+}
+.scroll_item_active {
+    width: 10px;
+    height: 10px;
+    margin: 30px;
+    background-color: #FFF;
+}
+
+
+#second{
+    width:100vw;
+    height:800px;
+    position:absolute;
+    background-image:url("https://www.nationalgeographic.com/content/dam/animals/pictures/mammals/b/blue-whale/blue-whale_02.jpg");
+    background-size:cover;
+    top:0px;
+}
+
+
+#third {
+    width:110vw;
+    height:900px;
+    position:absolute;
+    background-color:black;
+    background-size:cover;
+    top:800px;
+}
+
+#third img {
+    height:900px;
+    width:100vw;
+    object-fit:cover;
+    opacity:0.2;
+}
+
+
+
+input {
+	outline: none;
+}
+
+input[type=text] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	font-family: inherit;
+	font-size: 100%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display: none; 
+}
+
+
+input[type=text] {
+	background: #ededed url('https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png') no-repeat 9px center;
+	border: solid 1px rgb(247, 247, 247);
+	padding: 9px 10px 9px 32px;
+	width: 55px;
+	
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+	
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+
+input[type=text]:focus {
+	width: 130px;
+    background-color: #fff;
+    opacity:0.7;
+}
+
+
+input:-moz-placeholder {
+	color: #999;
+}
+
+input::-webkit-input-placeholder {
+	color:white;
+}
+
+#demo-2 input[type=text] {
+    width: 15px;
+	padding-left: 10px;
+    color: transparent;
+    background-color:white;
+    cursor: pointer;
+    position:absolute;
+    left:150px;
+    top:305px;
+}
+#demo-2 input[type=text]:hover {
+    background-color: #fff;
+    opacity:0.7;
+}
+#demo-2 input[type=text]:focus {
+	width: 130px;
+	padding-left: 32px;
+	color:black;
+    background-color:white;
+    cursor: auto;
+    opacity:0.8;
+}
+#demo-2 input:-moz-placeholder {
+    color:transparent;
+}
+
+#demo-2 input::-webkit-input-placeholder {
+	color:transparent;
+}
+
+.animal_list{
+    display:flex;
+    justify-content:center;
+    flex-direction:row;
+    align-content:flex-start;
+}
+
+.ani_container1 {
+    width:12%;
+    height:100px;
+    position:absolute;
+    top:120px;
+    left:46%;
+    align-content:flex-start;
+    align-self:center;
+    flex-wrap:wrap;
+}
+
+.ani_container2{
+    width:12%;
+    position:absolute;
+    top:120px;
+    height:100px;
+    left:63%;
+    align-content:flex-start;
+    align-self:center;
+    flex-wrap:wrap;
+}
+
+.ani_container3{
+    width:12%;
+    height:100px;
+    position:absolute;
+    top:120px;
+    left:78%;
+    align-content:flex-start;
+    align-self:center;
+    flex-wrap:wrap;
+}
+
+#word {
+    font-size:27px;
+    text-align:center;
+    font-family:Bodoni72C;
+}
+
+#find_animal{
+    font-size:80px;
+    font-family:Bodoni72C;
+    position:absolute;
+    top:120px;
+    left:150px;
+    line-height:80px;
+    color:rgb(160,124,53);
+}
+
+#animal_namess{
+    color: white;
+    font-size:50px;
+    text-align:left;
+    font-family:Bodoni72C;
+}
+
+.slide-bar{
+    padding:20px 20px 20px 20px;
+    background-color: black;
+    width:27%;
+    height:100%;
+    opacity:0.9;
+}
+
+#content-btn{
+  padding: 6px 8px 6px 7px;
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(249,182,23);
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  font-family:Bodoni72C;
+}
+
+
+#content-btn1{
+  font-size:60px;
+  text-decoration: none;
+  color: rgb(160,124,53);
+  background: none;
+  display:inline;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+#contained {
+    overflow:scroll;
+    height:400px;
+    width:140px;
+    background-color: transparent;
+    text-align:left;
+}
+
+#contained2 {
+    overflow:scroll;
+    height:80px;
+    width:85%;
+    background-color: transparent;
+    text-align:left;
+}
+
+
+
+#content-btn1:hover {
+    color:rgb(238,196,101);
+}
+
+#content-btn:hover{
+    color:rgb(248,216,85);
+    text-underline-position: below;
+}
+
+.active {
+    background-color: rgb(173, 173, 173);
+    color: white;
+}
+
+
+.a {
+    display:none;
+    color:white;
+}
+
+#animal-name {
+    display:none;
+}
+
+#animalbtn {
+    display:none;
+}
+
+
+@media only screen and (max-width:770px){
+#extinction {
+    left:140px;
+    font-size:40px;
+    line-height:45px;
+
+}
+
+#text {
+    left:140px;
+    font-size:25px;
+}
+
+#find_animal {
+    top:80px;
+    left:110px;
+    font-size:48px;
+    line-height:45px;
+}
+
+#demo-2 input[type=text]{
+    left:460px;
+    top:80px;
+    width:140px;
+    
+}
+
+#demo-2 input[type=text]:focus {
+    width: 140px;
+}
+
+.ani_container1 {
+    top:200px;
+    left:14%;
+}
+
+.ani_container2{
+    top:200px;
+    left:40%;
+}
+
+.ani_container3{
+    top:200px;
+    left:62%;
+}
+
+#contained {
+    width:110px;
+}
+
+.slide-bar{
+    padding:15px 15px 30px 22px;
+    background-color: black;
+    width:100%;
+    height:100%;
+    opacity:1;
+    position:absolute;
+    top:42%;
+    left:0px;
+}
+
+#content-btn{
+    padding: 4px 6px 4px 5px;
+    font-size: 32px;
+    display: inline-block;
+    color:rgb(160,124,53);
+    width: 100%;
+}
+
+#contained2 {
+    height:70px;
+    width:90%;
+}
+
+#content-btn:hover{
+    color:rgb(249,182,23);
+    text-underline-position: below;
+}
+
+#animal_namess{
+    font-size:46px;
+
+}
+  
+.a {
+    display:none;
+
+}
+
+}
+
+@media only screen and (max-width:380px) {
+
+#container {
+        margin: 0px 80px 0 80px;
+    }
+
+#extinction {
+        left:80px;
+        right:80px;
+        top:35%;
+        font-size:35px;
+        line-height:50px;
+        text-align:center;
+    
+    }
+    
+#text {
+        top:30%;
+        left:50px;
+        font-size:25px;
+    }
+
+.slide-bar{
+    padding:15px 15px 30px 22px;
+    background-color: black;
+    width:100vw;
+    height:100%;
+    opacity:1;
+    position:absolute;
+    top:25%;
+    left:0px;
+}
+
+#content-btn{
+        padding: 4px 6px 4px 5px;
+        font-size:20px;
+        display: inline-block;
+        color:rgb(160,124,53);
+        width: 100%;
+}
+
+#scroll {
+    position: fixed;
+    top: 40%;
+    left:20px;
+    z-index: 999;
+    display:none;
+}
+
+#second{
+    width:375px;
+    height:820px;
+    position:absolute;
+    background-image:url("https://www.nationalgeographic.com/content/dam/animals/pictures/mammals/b/blue-whale/blue-whale_02.jpg");
+    background-size:cover;
+    top:0px;
+}
+
+
+#third {
+    width:375px;
+    height:824px;
+    position:absolute;
+    background-color:black;
+    background-size:cover;
+    top:820px;
+}
+
+#third img {
+    height:824px;
+    width:100vw;
+    object-fit:cover;
+    opacity:0.2;
+}
+
+#find_animal {
+    top:80px;
+    left:60px;
+    text-align:center;
+    font-size:48px;
+    line-height:55px;
+}
+
+#demo-2 input[type=text]{
+    left:65px;
+    top:230px;
+    width:190px;
+    
+}
+
+#demo-2 input[type=text]:focus {
+    width: 190px;
+}
+
+.ani_container1 {
+    width:100px;
+    height:20px;
+    top:300px;
+    left:55px;
+}
+
+.ani_container2{
+    width:100px;
+    top:300px;
+    height:20px;
+    left:220px;
+}
+
+.ani_container3{
+    width:100px;
+    height:20px;
+    top:510px;
+    left:110px;
+}
+
+
+#contained {
+    overflow:scroll;
+    height:120px;
+    width:115px;
+    font-size:18px;
+    background-color: transparent;
+    text-align:left;
+}
+
+#content-btn1{
+    font-size:17px;
+    border:2px solid rgb(160,124,53);
+  }
+
+#word {
+    font-size:21px;
+    text-align:center;
+    font-family:Bodoni72C;
+}
+
+
+  
+
+}

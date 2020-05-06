@@ -67,7 +67,7 @@ var app = {
     
       function drawRegionsMap() {
         var data = google.visualization.arrayToDataTable([
-          ['Country', 'Popularity'],
+          ['Country', 'Population'],
           ['Germany', 2173],
           ['United States', 11346],
           ['Brazil', 9480],

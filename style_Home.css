@@ -518,7 +518,7 @@ input::-webkit-input-placeholder {
 
 #third img {
     height:824px;
-    width:100vw;
+    width:100%;
     object-fit:cover;
     opacity:0.2;
 }
